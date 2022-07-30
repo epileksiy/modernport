@@ -1,0 +1,28 @@
+* {
+    cursor: none;
+}
+
+.maintext {
+    font-size: calc(100vw/8);
+    cursor: default;
+}
+
+.cursor {
+    background-color: white;
+    height:32px;
+    width: 32px;
+    border-radius: 50%;
+    position:fixed;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+
+.glass {
+    background: rgb(0, 255, 85,0.2);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+}
+
+//   background: rgba(60, 255, 0, 0.229);
