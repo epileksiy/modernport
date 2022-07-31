@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { MeshWobbleMaterial, softShadows, Edges} from '@react-three/drei';
+import { softShadows} from '@react-three/drei';
+
+import Model from './Model';
 
 export default function Scene () {
     softShadows();
@@ -8,21 +10,24 @@ export default function Scene () {
     function Cube() {
         // eslint-disable-next-line 
         const meshRef = useRef();
+        let time = -0.5
     
         useFrame(()=>{
           if(!meshRef.current){
             return;
           }
-    
-          meshRef.current.rotation.x += 0.005;
-          meshRef.current.rotation.y += 0.005; 
+          time = time+0.005;
+        //   meshRef.current.rotation.x += 0.005;
+          meshRef.current.rotation.y += Math.sin(time)*0.01; 
         });
     
         return(
             <>
-                <mesh castShadow ref={meshRef}>
-                    <boxGeometry args={[2,2,2]}/>
+                {/* <mesh castShadow ref={meshRef}>
+                    <boxGeometry args={[2,2,2]} />
+
                     <MeshWobbleMaterial factor={0.6} speed={3} color="#A865C9" roughness={0.1} metalness={0.2}/>
+                    <Environment preset="warehouse"/>
                     <Edges
                         scale={1.1}
                         threshold={15} // Display edges only when the angle between two faces exceeds this value (default=15 degrees)
@@ -33,7 +38,12 @@ export default function Scene () {
                         threshold={25} // Display edges only when the angle between two faces exceeds this value (default=15 degrees)
                         color="#f705aa"
                     />
+                </mesh> */}
+                <mesh castShadow ref={meshRef}>
+                    <Model scale={[0.1,0.1,0.1]} position={[0,-1,0]} >
+                    </Model>
                 </mesh>
+
                 <group position={[0, -3.5, 0]}>
                     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.5, 0]} receiveShadow>
                         <planeBufferGeometry attach="geometry" args={[100, 100]} />

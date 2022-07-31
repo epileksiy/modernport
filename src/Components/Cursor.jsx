@@ -4,9 +4,12 @@ import React, { useEffect, useState} from 'react';
 
 export default function Cursor () {
     
+    const screenWidth = window.screen.width;
+    const screenHeight = window.screen.height;
+
     const [mousePosition, setMousePosition] = useState({
-        x:0,
-        y:0
+        x: screenWidth/2,
+        y: screenHeight/2 +90
     });
 
     const [cursorVariant, setCursorVariant] = useState("default");
@@ -51,7 +54,7 @@ export default function Cursor () {
         <>
             <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="z-10 w-full text-center text-white my-auto font-bold maintext flex flex-col items-center">
                 <p>HELLO WORLD.</p>
-                <div className="text-xl md:text-3xl text-white glass rounded-md md:rounded-xl p-3 md:p-7 md:font-bold">@sadhighkid</div>
+                <div className="text-xl md:text-3xl text-white lg:glass rounded-md md:rounded-xl p-3 md:p-7 md:font-bold">@sadhighkid</div>
             </div>
             <motion.div
                 className="cursor"
