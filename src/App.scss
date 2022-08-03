@@ -2,9 +2,12 @@
     cursor: none;
 }
 
+.App {
+    min-height: 100vh;
+    height: 100%;
+}
 .maintext {
     font-size: calc(100vw/8);
-    cursor: default;
 }
 
 .cursor {
@@ -19,10 +22,149 @@
 }
 
 .glass {
-    background: rgb(0, 255, 85,0.2);
+    background: rgb(255, 255, 255,0.2);
     border-top: 1px solid rgba(255,255,255,0.5);
     border-left: 1px solid rgba(255,255,255,0.5);
     backdrop-filter: blur(5px);
 }
 
 //   background: rgba(60, 255, 0, 0.229);
+
+  
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 30.55556vh;
+    height: 30.55556vh;
+    margin-left: -15.27778vh;
+    margin-top: -15.27778vh;
+}
+
+.loader-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    opacity: 0;
+    width: 8.33333vh;
+    height: 8.33333vh;
+    background: #fdfdfd;
+    -webkit-animation: show 0.88s step-end infinite alternate, pulse 0.88s linear infinite alternate;
+    animation: show 0.88s step-end infinite alternate, pulse 0.88s linear infinite alternate;
+}
+
+.loader-block:nth-child(1) {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-animation-delay: 0.065s;
+    animation-delay: 0.065s;
+}
+
+.loader-block:nth-child(2) {
+    -moz-transform: translate(11.11111vh, 0);
+    -ms-transform: translate(11.11111vh, 0);
+    -webkit-transform: translate(11.11111vh, 0);
+    transform: translate(11.11111vh, 0);
+    -webkit-animation-delay: 0.13s;
+    animation-delay: 0.13s;
+}
+
+.loader-block:nth-child(3) {
+    -moz-transform: translate(22.22222vh, 0);
+    -ms-transform: translate(22.22222vh, 0);
+    -webkit-transform: translate(22.22222vh, 0);
+    transform: translate(22.22222vh, 0);
+    -webkit-animation-delay: 0.195s;
+    animation-delay: 0.195s;
+}
+
+.loader-block:nth-child(4) {
+    -moz-transform: translate(0, 11.11111vh);
+    -ms-transform: translate(0, 11.11111vh);
+    -webkit-transform: translate(0, 11.11111vh);
+    transform: translate(0, 11.11111vh);
+    -webkit-animation-delay: 0.325s;
+    animation-delay: 0.325s;
+}
+
+.loader-block:nth-child(5) {
+    -moz-transform: translate(11.11111vh, 11.11111vh);
+    -ms-transform: translate(11.11111vh, 11.11111vh);
+    -webkit-transform: translate(11.11111vh, 11.11111vh);
+    transform: translate(11.11111vh, 11.11111vh);
+    -webkit-animation-delay: 0.13s;
+    animation-delay: 0.13s;
+}
+
+.loader-block:nth-child(6) {
+    -moz-transform: translate(22.22222vh, 11.11111vh);
+    -ms-transform: translate(22.22222vh, 11.11111vh);
+    -webkit-transform: translate(22.22222vh, 11.11111vh);
+    transform: translate(22.22222vh, 11.11111vh);
+    -webkit-animation-delay: 0.455s;
+    animation-delay: 0.455s;
+}
+
+.loader-block:nth-child(7) {
+    -moz-transform: translate(0, 22.22222vh);
+    -ms-transform: translate(0, 22.22222vh);
+    -webkit-transform: translate(0, 22.22222vh);
+    transform: translate(0, 22.22222vh);
+    -webkit-animation-delay: 0.39s;
+    animation-delay: 0.39s;
+}
+
+.loader-block:nth-child(8) {
+    -moz-transform: translate(11.11111vh, 22.22222vh);
+    -ms-transform: translate(11.11111vh, 22.22222vh);
+    -webkit-transform: translate(11.11111vh, 22.22222vh);
+    transform: translate(11.11111vh, 22.22222vh);
+    -webkit-animation-delay: 0.26s;
+    animation-delay: 0.26s;
+}
+
+.loader-block:nth-child(9) {
+    -moz-transform: translate(22.22222vh, 22.22222vh);
+    -ms-transform: translate(22.22222vh, 22.22222vh);
+    -webkit-transform: translate(22.22222vh, 22.22222vh);
+    transform: translate(22.22222vh, 22.22222vh);
+}
+
+@-webkit-keyframes pulse {
+    from,
+    60% {
+    background: #ffd0ff;
+    }
+    to {
+    background: #ff91ff;
+    }
+}
+@-webkit-keyframes show {
+    from, 40% {
+    opacity: 0;
+    }
+    41%, to {
+    opacity: 1;
+    }
+}
+@keyframes pulse {
+    from,
+    60% {
+    background: #ffd0ff;
+    }
+    to {
+    background: #ff91ff;
+    }
+}
+@keyframes show {
+    from, 40% {
+    opacity: 0;
+    }
+    41%, to {
+    opacity: 1;
+    }
+}
+  

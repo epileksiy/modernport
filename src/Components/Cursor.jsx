@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState} from 'react';
 
 
-export default function Cursor () {
+export default function Cursor ({clickToSee}) {
     
     const screenWidth = window.screen.width;
     const screenHeight = window.screen.height;
@@ -42,7 +42,8 @@ export default function Cursor () {
             width: 250,
             x:mousePosition.x - 125,
             y:mousePosition.y - 125,
-            backgroundColor: "#ff31da",
+            backgroundColor: "#deb2ed",
+            opacity: 0.8,
             mixBlendMode: "hue"
         }
     }
@@ -52,12 +53,18 @@ export default function Cursor () {
         
     return (
         <>
-            <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="z-10 w-full text-center text-white my-auto font-bold maintext flex flex-col items-center">
-                <p>HELLO WORLD.</p>
-                <div className="text-xl md:text-3xl text-white lg:glass rounded-md md:rounded-xl p-3 md:p-7 md:font-bold">@sadhighkid</div>
+            <div onMouseEnter={textEnter} onMouseLeave={textLeave} className="h-2/3 z-10 w-full flex flex-col justify-between">
+                <div className="text-center text-white font-bold maintext flex flex-col items-center">
+                    <p>HELLO WORLD.</p>
+                    <div className="lanscape:text-sm portrait:text-xl md:text-3xl text-white glass rounded-md md:rounded-xl p-2 lg:p-7 md:font-bold">@sadhighkid</div>
+                </div>
+                <div className="text-white text-2xl font-semibold text-center mb-24 lg:mb-4 hover:text-3xl transition-all underline">
+                    <p className="cursor-pointer" onClick={clickToSee}>Projects</p>
+                </div>   
             </div>
+            
             <motion.div
-                className="cursor"
+                className="cursor hidden lg:flex"
                 variants={variants}
                 animate={cursorVariant}
                 style={{backgroundColor: "rgb(255, 255, 255)"}}

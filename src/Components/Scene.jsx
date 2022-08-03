@@ -1,14 +1,13 @@
 import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { softShadows} from '@react-three/drei';
+import { softShadows } from '@react-three/drei';
 
 import Model from './Model';
 
 export default function Scene () {
     softShadows();
-
+    
     function Cube() {
-        // eslint-disable-next-line 
         const meshRef = useRef();
         let time = -0.5
     
@@ -17,28 +16,12 @@ export default function Scene () {
             return;
           }
           time = time+0.005;
-        //   meshRef.current.rotation.x += 0.005;
-          meshRef.current.rotation.y += Math.sin(time)*0.01; 
+
+          meshRef.current.rotation.y += Math.sin(time)*0.005; 
         });
     
         return(
             <>
-                {/* <mesh castShadow ref={meshRef}>
-                    <boxGeometry args={[2,2,2]} />
-
-                    <MeshWobbleMaterial factor={0.6} speed={3} color="#A865C9" roughness={0.1} metalness={0.2}/>
-                    <Environment preset="warehouse"/>
-                    <Edges
-                        scale={1.1}
-                        threshold={15} // Display edges only when the angle between two faces exceeds this value (default=15 degrees)
-                        color="white"
-                    />
-                                        <Edges
-                        scale={1.5}
-                        threshold={25} // Display edges only when the angle between two faces exceeds this value (default=15 degrees)
-                        color="#f705aa"
-                    />
-                </mesh> */}
                 <mesh castShadow ref={meshRef}>
                     <Model scale={[0.1,0.1,0.1]} position={[0,-1,0]} >
                     </Model>
@@ -57,7 +40,6 @@ export default function Scene () {
         )
     
     }
-
 
     return(
         <Canvas shadows>
