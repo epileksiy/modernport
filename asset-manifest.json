@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/modernport/static/css/main.ff039878.css",
-    "main.js": "/modernport/static/js/main.0e1679a1.js",
+    "main.css": "/modernport/static/css/main.e649599f.css",
+    "main.js": "/modernport/static/js/main.dc62f8c7.js",
     "index.html": "/modernport/index.html",
-    "main.ff039878.css.map": "/modernport/static/css/main.ff039878.css.map",
-    "main.0e1679a1.js.map": "/modernport/static/js/main.0e1679a1.js.map"
+    "main.e649599f.css.map": "/modernport/static/css/main.e649599f.css.map",
+    "main.dc62f8c7.js.map": "/modernport/static/js/main.dc62f8c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff039878.css",
-    "static/js/main.0e1679a1.js"
+    "static/css/main.e649599f.css",
+    "static/js/main.dc62f8c7.js"
   ]
 }
