@@ -1,9 +1,27 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import Cursor from './Cursor';
 import '../App.scss';
 
 export default function Content ({stProjects,stSeeProjects}) {
     const [projects, seeProjects] = useState(false);
+
+
+    let myRef = useRef();
+
+    const projectsbutton = () => {
+        seeProjects(!projects);
+        if(!projects){
+            setTimeout(()=>{
+                window.scrollTo({
+                    top: window.innerHeight/2,
+                    left: 0,
+                    behavior: "smooth"
+                });
+            },100);
+        }
+
+    };
+
     return(
       <>
         <div className="h-screen w-full flex flex-col">
@@ -41,18 +59,47 @@ export default function Content ({stProjects,stSeeProjects}) {
 
                 </div>
             </div>
-
-            <Cursor clickToSee={()=>seeProjects(!projects)}/>
+            <Cursor visible={projects} clickToSee={projectsbutton}/>
         </div>
 
         {projects && 
-        <div className="h-auto w-full lesslg:projectsM lg:projectsPC p-5 lg:p-10 flex justify-center">
-            <div className="lg:bg-white z-10 w-full lg:w-1/2 h-full rounded-xl p-2 lg:p-10">
-                <div className="w-full h-64 bg-white"></div>
-                <div className="w-full h-64 bg-white mt-10"></div>
-                <div className="w-full h-64 bg-white mt-10"></div>
+        <>
+            <div className="h-auto w-full p-5 lg:p-10 flex justify-center relative">
+                <div className="bg-grain h-full w-full absolute inset-0 "></div>
+                <div className=" z-10 w-full lg:w-1/3 h-full rounded-md p-2 lg:p-10 mb-10 ">
+                    <div className="w-full h-auto bg-white rounded-md">
+                        <div className="h-56 w-full project1 rounded-t-md">
+
+                        </div>
+                        <div className="h-1/4   p-4">
+                            <p className='text-2xl lg:text-3xl font-semibold text-black'>Fortnite-style portfolio site / ThreeJs + React + Router</p>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Креативный сайт-портфолио на игровую тематику</p>
+                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://epileksiy.github.io/fortnite-site">перейти</a>
+                        </div>
+                    </div>
+                    <div className="w-full h-auto bg-white rounded-md mt-10">
+                        <div className="h-56 w-full project2 rounded-t-md">
+
+                        </div>
+                        <div className="h-1/4   p-4" >
+                            <p className='text-2xl lg:text-3xl font-semibold text-black'> Сайт "БцХ Энерго"</p>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Информационный сайт для компании "Бцх Энерго"</p>
+                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://epileksiy.github.io/depbch">перейти</a>
+                        </div>
+                    </div>
+                    <div className="w-full h-auto bg-white rounded-md mt-10">
+                        <div className="h-56 w-full project3 rounded-t-md">
+
+                        </div>
+                        <div className="h-1/4   p-4" ref={myRef}>
+                            <p className='text-2xl lg:text-3xl font-semibold text-black'> WEBAR-опыт Skoltech</p>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Опыт дополненной реальности спроектированный для Skoltech Selection Days 2022</p>
+                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://orv28.zappar.io/1897291388026435611/1.6.91/">перейти</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>}
+        </>}
       </>
     );
 }
