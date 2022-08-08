@@ -66,15 +66,15 @@ export default function Content ({stProjects,stSeeProjects}) {
         <>
             <div className="h-auto w-full p-5 lg:p-10 flex justify-center relative">
                 <div className="bg-grain h-full w-full absolute inset-0 "></div>
-                <div className=" z-10 w-full lg:w-1/3 h-full rounded-md p-2 lg:p-10 mb-10 ">
+                <div className=" z-10 w-full lg:w-1/3 h-full rounded-md p-2 lg:p-10 mb-4 ">
                     <div className="w-full h-auto bg-white rounded-md">
                         <div className="h-56 w-full project1 rounded-t-md">
 
                         </div>
                         <div className="h-1/4   p-4">
                             <p className='text-2xl lg:text-3xl font-semibold text-black'>Fortnite-style portfolio site / ThreeJs + React + Router</p>
-                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Креативный сайт-портфолио на игровую тематику</p>
-                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://epileksiy.github.io/fortnite-site">перейти</a>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600 mb-5'>Креативный сайт-портфолио на игровую тематику</p>
+                            <a className='text-xl font-semibold text-green-500 underline  cursor-pointer' href="https://epileksiy.github.io/fortnite-site">перейти</a>
                         </div>
                     </div>
                     <div className="w-full h-auto bg-white rounded-md mt-10">
@@ -83,8 +83,8 @@ export default function Content ({stProjects,stSeeProjects}) {
                         </div>
                         <div className="h-1/4   p-4" >
                             <p className='text-2xl lg:text-3xl font-semibold text-black'> Сайт "БцХ Энерго"</p>
-                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Информационный сайт для компании "Бцх Энерго"</p>
-                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://epileksiy.github.io/depbch">перейти</a>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600 mb-5'>Информационный сайт для компании "Бцх Энерго"</p>
+                            <a className='text-xl font-semibold text-green-500 underline cursor-pointer' href="https://epileksiy.github.io/depbch">перейти</a>
                         </div>
                     </div>
                     <div className="w-full h-auto bg-white rounded-md mt-10">
@@ -93,9 +93,14 @@ export default function Content ({stProjects,stSeeProjects}) {
                         </div>
                         <div className="h-1/4   p-4" ref={myRef}>
                             <p className='text-2xl lg:text-3xl font-semibold text-black'> WEBAR-опыт Skoltech</p>
-                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600'>Опыт дополненной реальности спроектированный для Skoltech Selection Days 2022</p>
-                            <a className='text-xl font-semibold text-green-500 underline mt-5 cursor-pointer' href="https://orv28.zappar.io/1897291388026435611/1.6.91/">перейти</a>
+                            <p className='text-1xl lg:text-2xl font-semibold text-gray-600 mb-5'>Опыт дополненной реальности спроектированный для Skoltech Selection Days 2022</p>
+                            <a className='text-xl font-semibold text-green-500 underline cursor-pointer' href="https://orv28.zappar.io/1897291388026435611/1.6.91/">перейти</a>
                         </div>
+                    </div>
+
+                    <div className="w-full h-auto text-center text-white font-semibold text-3xl mt-24 uppercase">
+                        <p>"HELLOWORLD." 2022</p>
+                        <p>YOUR LANDING. YOUR IDENTITY.</p>
                     </div>
                 </div>
             </div>

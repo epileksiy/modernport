@@ -23,7 +23,7 @@ export default function Model({ ...props }) {
     variants={variants}
     transition={{duration:2}}
     >
-      <group scale={4.58}>
+      <group scale={4.1}>
       <mesh
           castShadow
           receiveShadow
