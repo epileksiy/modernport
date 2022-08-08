@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/modernport/static/css/main.13dc01c6.css",
+    "main.css": "/modernport/static/css/main.d165148c.css",
     "main.js": "/modernport/static/js/main.100e6113.js",
-    "static/media/bunnybg3.png": "/modernport/static/media/bunnybg3.77c4bd909f0a5f58a47c.png",
-    "static/media/bunnybg4.png": "/modernport/static/media/bunnybg4.43cb66d2f2f94aa9c9e2.png",
+    "static/media/bunnybg4.png": "/modernport/static/media/bunnybg4.90820c6d9a3819253bb3.png",
+    "static/media/bunnybg3.png": "/modernport/static/media/bunnybg3.33f01acb3be8eac9cb86.png",
     "static/media/bch.jpg": "/modernport/static/media/bch.af676dab0318510d7f35.jpg",
     "static/media/fortLogo.jpg": "/modernport/static/media/fortLogo.d443b59ff24b7dfcd82f.jpg",
     "static/media/skoltech.jpg": "/modernport/static/media/skoltech.ceeb47c71856de41af20.jpg",
     "index.html": "/modernport/index.html",
-    "main.13dc01c6.css.map": "/modernport/static/css/main.13dc01c6.css.map",
+    "main.d165148c.css.map": "/modernport/static/css/main.d165148c.css.map",
     "main.100e6113.js.map": "/modernport/static/js/main.100e6113.js.map"
   },
   "entrypoints": [
-    "static/css/main.13dc01c6.css",
+    "static/css/main.d165148c.css",
     "static/js/main.100e6113.js"
   ]
 }
