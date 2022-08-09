@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="bg-green-300 w-full App flex flex-col">
 
-      <div className="z-{-1} w-full h-screen absolute text-9xl">
+      <div className="z-0 w-full h-screen absolute text-9xl">
         <Suspense fallback={
           <div className="loader">
               <span className="loader-block"></span>

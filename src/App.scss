@@ -1,6 +1,6 @@
-* {
-    cursor: none;
-}
+// * {
+//     cursor: none;
+// }
 
 .project1 {
     background-image: url('../public/fortLogo.jpg');
@@ -27,10 +27,19 @@
 .App {
     min-height: 100vh;
     height: 100%;
+    --ratio: 100vh / 100vw;
 }
-.maintext {
-    font-size: calc(100vw/8);
+@media (max-height: 720px) { 
+    .maintext {
+        font-size:calc(100vw/14);
+    }
 }
+@media (min-height: 720px) { 
+    .maintext {
+        font-size:calc(100vw/8);
+    }
+}
+
 
 .cursor {
     background-color: white;
@@ -191,5 +200,6 @@
 }
 
 .bg-grain {
-	background: linear-gradient(rgba(134, 239, 172, 0) 80%, rgb(253, 189, 255))
+	background: linear-gradient(rgba(134, 239, 172, 0) 80%, rgb(253, 189, 255));
+    opacity: 0.9;
 }
