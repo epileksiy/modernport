@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion-3d"
 import { useGLTF, MeshWobbleMaterial, Edges, Environment } from "@react-three/drei";
+import HdrFile from "../lonely_road_afternoon_puresky_2k.hdr";
 
 
 export default function Model({ ...props }) {
@@ -86,7 +87,7 @@ export default function Model({ ...props }) {
             />
         </mesh>
       </group>
-      <Environment preset="warehouse"/>
+      <Environment files={HdrFile}/>
     </motion.group>
   );
 }

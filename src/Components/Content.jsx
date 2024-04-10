@@ -67,7 +67,7 @@ export default function Content ({stProjects,stSeeProjects}) {
             <>
                 <div className="h-auto w-full p-5 lg:p-10 flex justify-center relative projectsdiv z-1">
                     <div className="bg-grain h-full w-full absolute inset-0 "></div>
-                    <div className=" w-full lg:w-1/3 z-10 h-full rounded-md p-2 lg:p-10 mb-4 ">
+                    <div className=" w-full md:w-1/2 lg:w-3/4 xl:w-1/3 z-10 h-full rounded-md p-2 lg:p-10 mb-4 ">
 
                         <div className="w-full h-auto bg-white rounded-md">
                             <div className="h-56 w-full project2 rounded-t-md">
