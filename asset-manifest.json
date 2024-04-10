@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/modernport/static/css/main.f981b4ca.css",
-    "main.js": "/modernport/static/js/main.eb980537.js",
+    "main.css": "/modernport/static/css/main.6db79006.css",
+    "main.js": "/modernport/static/js/main.e0e5a24b.js",
+    "static/media/lonely_road_afternoon_puresky_2k.hdr": "/modernport/static/media/lonely_road_afternoon_puresky_2k.9a363b18a6b2cc4fb0d6.hdr",
     "static/media/bunnybg3.png": "/modernport/static/media/bunnybg3.33f01acb3be8eac9cb86.png",
     "static/media/bch.jpg": "/modernport/static/media/bch.af676dab0318510d7f35.jpg",
     "static/media/fortLogo.jpg": "/modernport/static/media/fortLogo.d443b59ff24b7dfcd82f.jpg",
     "static/media/skoltech.jpg": "/modernport/static/media/skoltech.ceeb47c71856de41af20.jpg",
     "index.html": "/modernport/index.html",
-    "main.f981b4ca.css.map": "/modernport/static/css/main.f981b4ca.css.map",
-    "main.eb980537.js.map": "/modernport/static/js/main.eb980537.js.map"
+    "main.6db79006.css.map": "/modernport/static/css/main.6db79006.css.map",
+    "main.e0e5a24b.js.map": "/modernport/static/js/main.e0e5a24b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f981b4ca.css",
-    "static/js/main.eb980537.js"
+    "static/css/main.6db79006.css",
+    "static/js/main.e0e5a24b.js"
   ]
 }
